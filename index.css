@@ -56,11 +56,22 @@ body{
     border-radius: 50%;
 }
 
+.names{
+    padding-left: 15px;
+    color: var(--primary-white);
+}
+
 .topCol .testimonial1{
     background-color: var(--primary-violet);
     border-radius: 10px;
     padding: 20px;
+    background-image: url("./images//bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 3.5rem;
+    background-position-x: 80%;
 }
+
 
 .topCol .testimonial2{
     background-color: var(--primary-gray-blue);
@@ -89,4 +100,20 @@ body{
     border-radius: 10px;
     padding: 20px;
     height: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        grid-template-columns: auto;
+        width: 100%;
+        height: auto;
+    }
+    .topCol{
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    .bottomcol{
+        grid-template-columns: auto;
+        width: 100%;
+    }
 }
